@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Style -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Fondo Cabezera -->
+    <div class="row">
+        <div class="container" id="container_Logos_Gore">
+            <div class="row">
+                <div class="col-md-6 text-center"> 
+                    <img class="img-fluid p-4 w-50 h-0" src="../img/navbar_Logo_Gore.png" alt="Logo_Gobierno_Regional_Cusco">
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid p-4 w-50 h-0" src="../img/navbar_Logo_Gerepro.png" alt="Logo_Gobierno_Regional_Cusco">
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <!-- Cabezera -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vinicunca</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Tarifario</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" id="login-button"><strong>Comprar Boletos</strong></a>
+            <a href="#">
+                <img src="../img/idioma_Español.png" alt="idioma_Español" id="idioma">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Seccion -->
+    <main>
+    <section class="container">
+        <div class="row mt-3">
+            <!--1ra Columna Datos de Reserva -->
+            <div class="col-sm-12 col-md-4 col-lg-4 border-3 rounded-2 mx-auto">
+                <div class="card mt-3">
+                    <h4 class="card-header"> 
+                        Datos de Reserva
+                    </h4>
+                    <div class="card-body d-inline-flex justify-content-between">
+                        <h5 class="card-title">Fecha de Reserva:</h5>
+                        <p class="card-text">29/02/2024</p>
+                    </div>
+                    <div class="card-body d-inline-flex justify-content-between">
+                        <h5 class="card-title">Tarifa:</h5>
+                        <p class="card-text">Tarifa General</p>
+                    </div>
+                    <div class="card-body d-inline-flex justify-content-between">
+                        <h5 class="card-title">Ruta:</h5>
+                        <p class="card-text">Ruta A</p>
+                    </div>
+                    <div class="card-body d-inline-flex justify-content-between">
+                        <h5 class="card-title">Cantidad de Boletos:</h5>
+                        <p class="card-text">03</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2da Columna Acordion Horarios -->
+            <div class="col-sm-12 col-md-8 cold-lg-8 border-3 rounded-2 mx-auto mt-3">
+                <div class="card">
+                    <h2>Horarios</h>
+                    <div class="accordion" id="acordion_Horarios">
+                        <!-- 1er Acordion - Fecha Actual -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Horario_Hoy" aria_expanded="true" aria-controls="panel_Horario_Hoy">
+                                    Fecha Actual: 29/02/24
+                                </button>
+                            </h2>
+                            <!-- Estructura Horarios -->
+                            <div class="accordion-collapse collapse show" id="panel_Horario_Hoy">
+                                <div class="accordion-body">
+                                    <div class="row">
+
+                                        <!-- 1er Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-2" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario01" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario01">
+                                                        <h3 class="card-title"> 06:00 - 07:00</h3>
+                                                        <p class="card-text"> 261 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 2er Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario02" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario02">
+                                                        <h3 class="car-title"> 07:00 - 08:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 3er Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario03" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario03">
+                                                        <h3 class="car-title"> 08:00 - 09:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <!-- 4to Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 09:00 - 10:00</h3>
+                                                        <p class="card-text"> AGOTADO</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 5to Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 10:00 - 11:00</h3>
+                                                        <p class="card-text"> 129 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 6to Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 11:00 - 12:00</h3>
+                                                        <p class="card-text"> 197 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 7mo Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario05" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario05">
+                                                        <h3 class="car-title"> 12:00 - 13:00</h3>
+                                                        <p class="card-text"> 121 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 8vo Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario06" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario06">
+                                                        <h3 class="car-title"> 12:00 - 13:00</h3>
+                                                        <p class="card-text"> AGOTADO</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 9no Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario07" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario07">
+                                                        <h3 class="car-title"> 13:00 - 14:00</h3>
+                                                        <p class="card-text"> 241 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 10mo Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario08" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario08">
+                                                        <h3 class="car-title"> 14:00 - 15:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 11vo Horario -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario09" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario09">
+                                                        <h3 class="car-title"> 15:00 - 16:00</h3>
+                                                        <p class="card-text"> 354 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 12vo Horario  -->
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario10" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario10">
+                                                        <h3 class="car-title"> 16:00 - 17:00</h3>
+                                                        <p class="card-text"> 389 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>       
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2do Acordion - Fecha + -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Horario_Mañana" aria_expanded="true" aria-controls="panel_Horario_Mañana">
+                                    Fecha Actual: 01/03/24
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="panel_Horario_Mañana">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-2" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario01" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario01">
+                                                        <h3 class="car-title"> 06:00 - 07:00</h3>
+                                                        <p class="card-text"> 261 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario02" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario02">
+                                                        <h3 class="car-title"> 07:00 - 08:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario03" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario03">
+                                                        <h3 class="car-title"> 08:00 - 09:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 09:00 - 10:00</h3>
+                                                        <p class="card-text"> AGOTADO</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 10:00 - 11:00</h3>
+                                                        <p class="card-text"> 129 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 11:00 - 12:00</h3>
+                                                        <p class="card-text"> 197 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario05" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario05">
+                                                        <h3 class="car-title"> 12:00 - 13:00</h3>
+                                                        <p class="card-text"> 121 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario06" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario06">
+                                                        <h3 class="car-title"> 12:00 - 13:00</h3>
+                                                        <p class="card-text"> AGOTADO</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario07" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario07">
+                                                        <h3 class="car-title"> 13:00 - 14:00</h3>
+                                                        <p class="card-text"> 241 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario08" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario08">
+                                                        <h3 class="car-title"> 14:00 - 15:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario09" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario09">
+                                                        <h3 class="car-title"> 15:00 - 16:00</h3>
+                                                        <p class="card-text"> 354 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario10" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario10">
+                                                        <h3 class="car-title"> 16:00 - 17:00</h3>
+                                                        <p class="card-text"> 389 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>       
+    
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3er Acordion - Fecha ++ -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Horario_Pasado_Mañana" aria_expanded="true" aria-controls="panel_Horario_Pasado_Mañana">
+                                    Fecha Actual: 02/03/24
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse" id="panel_Horario_Pasado_Mañana">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-2" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario01" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario01">
+                                                        <h3 class="car-title"> 06:00 - 07:00</h3>
+                                                        <p class="card-text"> 261 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario02" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario02">
+                                                        <h3 class="car-title"> 07:00 - 08:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario03" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario03">
+                                                        <h3 class="car-title"> 08:00 - 09:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 09:00 - 10:00</h3>
+                                                        <p class="card-text"> AGOTADO</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 10:00 - 11:00</h3>
+                                                        <p class="card-text"> 129 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario04">
+                                                        <h3 class="car-title"> 11:00 - 12:00</h3>
+                                                        <p class="card-text"> 197 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario05" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario05">
+                                                        <h3 class="car-title"> 12:00 - 13:00</h3>
+                                                        <p class="card-text"> 121 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario06" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario06">
+                                                        <h3 class="car-title"> 12:00 - 13:00</h3>
+                                                        <p class="card-text"> AGOTADO</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario07" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario07">
+                                                        <h3 class="car-title"> 13:00 - 14:00</h3>
+                                                        <p class="card-text"> 241 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario08" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario08">
+                                                        <h3 class="car-title"> 14:00 - 15:00</h3>
+                                                        <p class="card-text"> AGOTADO </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario09" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario09">
+                                                        <h3 class="car-title"> 15:00 - 16:00</h3>
+                                                        <p class="card-text"> 354 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class ="card-text-center col-sm-4 col-md-2 mb-3">
+                                            <div class="btn-group gap-3" role="group">
+                                                <div class="card-body">
+                                                    <input type="radio" class="btn-check" name="boton_Horarios" id="horario10" autocomplete="off">
+                                                    <label class="btn btn-outline-primary" for="horario10">
+                                                        <h3 class="car-title"> 16:00 - 17:00</h3>
+                                                        <p class="card-text"> 389 CUPOS</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>       
+    
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                    <!-- Boton Continuar Reserva -->
+                    <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                        <a href="./Registro_Pasajeros.html" class="btn btn-danger btn-lg mb-3">Continuar Reserva</a>
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+    </main>
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
