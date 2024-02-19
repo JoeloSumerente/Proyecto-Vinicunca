@@ -3,11 +3,12 @@
 } */
 #container_Logos_Gore{
     background-image: url(../img/navbar_Fondo.png);
+    
     background-size: cover;
 }
 #idioma{
-    width: 70px;
-    height: 35px;
+    width: 60px;
+    height: 30px;
     padding: 8px 20px;
 
 }
@@ -23,9 +24,10 @@
     margin: 20px;
     border-radius: 40px;
     padding: 0.5rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    
 }
-#login-button{
+.compra{
     background-color: white;
     color: rgb(158, 12, 38);
     font-size: 18px;
@@ -35,11 +37,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
     padding-left: 20px;
 }
-#login-button:hover{
-    background-image: url(img/fondo_vini_compra.png);
-    color: rgb(158, 12, 38);
+.compra:hover{
+    background-color: rgb(158, 12, 38);
+    color: rgb(255, 255, 255);
     background-position: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
 .navbar-toggler{
     border: none;
@@ -49,16 +51,18 @@
     box-shadow: none;
     outline: none;
 }
-.nav-link {
-    color: black;
+.nav-links {
+    color: rgb(255, 255, 255);
     font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
     position: relative;
 }
-.nav-link:hover, .nav-link{
-    /* color: white; */
+.nav-links:hover, .nav-links{
+    color: white;
     font-family: Arial black, "Helvetica Neue", Helvetica, sans-serif;
 }
-.nav-link::before{
+.nav-links::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -70,16 +74,16 @@
     visibility: hidden;
     transform: 0.3s ease-in-out;
 }
-.nav-link:hover::before{
+.nav-links:hover::before{
     width: 100%;
     visibility: visible;
 }
 .offcanvas{
-    background-color: rgb(158, 12, 38, 0.5);
+    background-color: rgb(158, 12, 38);
 }
 
 .offcanvas-title{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .btn-close{
     background-color: white;
@@ -129,21 +133,21 @@
     max-width: 100%; 
     height: auto;
 }
-a{
+.text_items{
     text-decoration: none;
     font-size: 17px;
 }
 
-p{
+.row p{
     font-size: 17px;
 }
-a:hover{
+.text_items:hover{
     color: #0D6EFD;
 }
-i{
+.bi{
     color: rgb(255, 255, 255);
     font-size: 30px;
 }
-i:hover{
+.bi:hover{
     color: rgb(77, 71, 71);
 }
