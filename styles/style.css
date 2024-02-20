@@ -3,7 +3,6 @@
 } */
 #container_Logos_Gore{
     background-image: url(../img/navbar_Fondo.png);
-    
     background-size: cover;
 }
 #idioma{
@@ -21,7 +20,7 @@
 .navbar {
     background-color: rgb(158, 12, 38);
     height: 80px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 40px;
     padding: 0.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
@@ -38,8 +37,8 @@
     padding-left: 20px;
 }
 .compra:hover{
-    background-color: rgb(158, 12, 38);
-    color: rgb(255, 255, 255);
+    background-image: url(../img/fondo_vini_compra.png);
+    color: rgb(158, 12, 38);
     background-position: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
