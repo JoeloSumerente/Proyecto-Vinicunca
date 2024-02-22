@@ -1,0 +1,62 @@
+1-.Estructura de directorios:
+assets/: Almacena archivos estáticos como CSS, JavaScript, imágenes, etc.
+controllers/: Contiene controladores que manejan la lógica de la aplicación.
+models/: Aquí se encuentran los modelos que interactúan con la base de datos u otras fuentes de datos.
+views/: Contiene las vistas, que son archivos HTML con código PHP incrustado.
+includes/: Archivos reutilizables o fragmentos que se incluirán en otras partes del código.
+
+2.-Archivo de configuración:
+config.php: Puedes tener un archivo de configuración para almacenar variables de configuración, como la información de la base de datos.
+
+3.-Bootstrap y Librerías:
+En el directorio assets/, puedes almacenar las librerías de Bootstrap y cualquier otro recurso necesario.
+
+4.-Archivos del Frontend:
+index.php: El punto de entrada principal que inicia la aplicación.
+Otros archivos del frontend que representan diferentes páginas o secciones de tu aplicación.
+
+5.-Controladores:
+controllers/HomeController.php: Controlador para la página principal.
+controllers/AboutController.php: Controlador para la página "Acerca de".
+Otros controladores según las secciones de tu aplicación.
+
+6.-Modelos:
+models/UserModel.php: Modelo para manejar datos relacionados con usuarios.
+models/ProductModel.php: Modelo para manejar datos de productos.
+
+7.-Vistas:
+
+views/home.php: Vista para la página principal.
+views/about.php: Vista para la página "Acerca de".
+Otros archivos de vista según las secciones de tu aplicación.
+
+8.-Archivos de Inclusión:
+includes/header.php: Encabezado común que se puede incluir en todas las páginas.
+includes/footer.php: Pie de página común.
+includes/navbar.php: Barra de navegación común.
+Autoload:
+
+Utiliza un sistema de autocarga de clases (autoload) para cargar automáticamente las clases cuando se necesiten. Puedes usar funciones como spl_autoload_register en tu archivo principal.
+------------------------------------------------------------------------------------
+project/
+|-- assets/
+|   |-- css/
+|   |-- js/
+|   |-- images/
+|-- controllers/
+|   |-- HomeController.php
+|   |-- AboutController.php
+|-- models/
+|   |-- UserModel.php
+|   |-- ProductModel.php
+|-- views/
+|   |-- home.php
+|   |-- about.php
+|-- includes/
+|   |-- header.php
+|   |-- footer.php
+|   |-- navbar.php
+|-- config.php
+|-- index.php
+
+

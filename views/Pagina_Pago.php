@@ -10,58 +10,14 @@
     <!-- Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     
 </head>
 </head>
 <body>
-    <!-- Fondo Cabezera -->
-    <div class="row">
-        <div class="container" id="container_Logos_Gore">
-            <div class="row">
-                <div class="col-md-6 text-center"> 
-                    <img class="img-fluid p-4 w-50 h-0" src="./img/navbar_Logo_Gore.png" alt="Logo_Gobierno_Regional_Cusco">
-                </div>
-                <div class="col-md-6 text-center">
-                    <img class="img-fluid p-4 w-50 h-0" src="./img/navbar_Logo_Gerepro.png" alt="Logo_Gobierno_Regional_Cusco">
-                </div>
-            </div>
-        </div>   
-    </div>
-    <!-- Cabezera -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header active">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vinicunca</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-links mx-lg-2 active" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-links mx-lg-2 active" aria-current="page" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-links mx-lg-2 active" aria-current="page" href="#">Tarifario</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <a href="./Reserva_Boletos.html" class="compra" ><strong>Comprar Boletos</strong></a>
-            <a href="#">
-                <img src="img/idioma_Español.png" alt="idioma_Español" id="idioma">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+    <!-- Componente Cabezera -->
+    <?php echo file_get_contents('../includes/header.html'); ?>
+
     <!-- Seccion -->
     <section class="container">
         <div class="row mt-3">
@@ -77,9 +33,10 @@
                         <div class="form-floating ">
                             <select class="form-select" id="tipo_Documento_Pasajero" required>
                                 <option selected disabled></option>
-                                <option value="1">DNI</option>
-                                <option value="2">Carnet de Extranjeria</option>
-                                <option value="3"> Pasaporte</option>  
+                                <option value="1"> RUC</option> 
+                                <option value="2">DNI</option>
+                                <option value="3">Carnet de Extranjeria</option>
+                                <option value="4"> Pasaporte</option>
                             </select>
                             <label for="tipo_Documento_Pasajero">
                             Tipo de Documento*</label>
@@ -221,7 +178,7 @@
                                 <!-- Boton de Pagar -->
                                 <div>
                                     <div class="d-grid p-3">
-                                        <a class="btn btn-danger btn-lg" type="button" href="./Comprado.html">PAGAR</a>
+                                        <a class="btn btn-danger btn-lg" type="button" href="./Pagina_Compra_Realizada.php">PAGAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +202,7 @@
                                 <div class="modal-body">
                                     <div class="card">
                                         <!-- Imagen Yape -->
-                                        <img src="./img/QR_Yape.jpeg" class="card-img-top" alt="QR_YAPE">
+                                        <img src="../assets/images/qr_Yape.jpeg" class="card-img-top" alt="QR_YAPE">
                                         <!-- Titulo de Compra -->
                                         <div class="card-body">
                                             <h2 class="card-title text-center">s/220.00</h2>
@@ -255,7 +212,7 @@
                                 </div>
                                 <div class="pb-4">
                                     <div class="d-grid px-3 pt-3">
-                                        <a class="btn btn-danger btn-lg" type="button" href="./Comprado.html">PAGAR</a>
+                                        <a class="btn btn-danger btn-lg" type="button" href="./Pagina_Compra_Realizada.php">PAGAR</a>
                                     </div>
                                 </div>
                             </div>
@@ -266,119 +223,10 @@
 
         </div>
     </section>
+
     <!-- Pie de Pagina | Footer -->
-    <footer class="footer text-dark pt-5 pb-4">
-        <div class="container text-center text-md-start">
-            <div class="row text-center text-md-start">
-                <!-- Mapa - Footer  ?-->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">mapa</h5>
-                    <hr class="mb-4 text-light">
-                    <!--Mostrar Mapa -->
-                    <a href="#"><img src="img/mapa_Vinicunca.jpg" class="w-50" alt=""data-bs-toggle="modal" data-bs-target="#mostrar_Mapa"></a>
-                    <!-- Ventan Flotatnte MAPA -->
-                    <div class="modal fade" id="mostrar_Mapa" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <!-- Titulo de Ventana flotante -->
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5">Mapa de Ruta</h1>
-                                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <!-- Contenido de Ventana flotante -->
-                                <div class="modal-body">
-                                    <div class="card">
-                                        <!-- Imagen Mapa de Vinicunca -->
-                                        <img src="img/mapa_Vinicunca.jpg" class="card-img-top" alt="mapa_Vinicunca">                                        
-                                    </div>
-                                </div>                               
-                            </div>
-                        </div>    
-                    </div>
-                    
-                    
-                </div>
-                <!-- Informacion - Footer  ?-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">informacion</h5>
-                    <hr class="mb-4 text-light">
-                    <p>
-                        <a href="" class="text_items text-light">Galeria</a>
-                    </p>
-                    <p>
-                        <a href="" class="text_items text-light">Blog</a>
-                    </p>
-                    <p>
-                        <a href="" class="text_items text-light">Preguntas Frecuentes</a>
-                    </p>
-                </div>
-                <!-- Ayuda - Footer ?-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">ayuda</h5>
-                    <hr class="mb-4 text-light">
-                    <p>
-                        <a href="" class="text_items text-light">Terminos & Condiciones</a>
-                    </p>
-                    <p>
-                        <a href="" class=" text_items text-light">Politica de Privacidad</a>
-                    </p>
-                    <p>
-                        <a href="" class=" text_items text-light">Libro de Reclamaciones</a>
-                    </p>
-                </div>
-                <!-- Contacto - Footer ?-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Contacto</h5>
-                    <hr class="mb-4 text-light">
-                    <p>
-                        <a href="" class=" text_items text-light">Av. Cusco</a>
-                    </p>
-                    <p>
-                        <a href="" class=" text_items text-light">region@gobiernoregional.com.pe</a>
-                    </p>
-                    <p>
-                        <a href="" class="text_items text-light">88 888888</a>
+    <?php echo file_get_contents('../includes/footer.html'); ?>
 
-                    </p>
-
-                </div>
-                <!-- Linea - Footer -->
-                <div class="container-line">
-                    <img class="line" src="./img/linea_Footer.png" alt="linea_Footer">
-                </div>
-                <!-- logo hagamos historia- Footer ?-->
-                <div class="container-logo-historia">
-                    <img src="./img/historia_Footer.png" alt="">
-                    <div class="media text-center">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="bi bi-google-play"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="bi bi-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- copyright-social_media - Footer ?-->
-                    <div class="text-center mb-2">
-                        <p id="copyright_Footer">
-                            Copyright © 2024 Gobierno Regional del Cusco Todos los derechos reservados.
-                            <a href="#">
-                                <strong class="text-primary">Test</strong>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-    </footer>
-    
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

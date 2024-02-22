@@ -1,8 +1,9 @@
 /* *{
     font-family: Arial black, Helvetica, sans-serif;
 } */
+/* Estilos por ID */
 #container_Logos_Gore{
-    background-image: url(../img/navbar_Fondo.png);
+    background-image: url(../assets/images/navbar_Fondo.png);
     background-size: cover;
 }
 #idioma{
@@ -13,6 +14,10 @@
 }
 #copyright_Footer{
     color: white;
+}
+#parrafo_Historia{
+text-align: justify;
+font-family: cursive;
 }
 
 
@@ -37,7 +42,7 @@
     padding-left: 20px;
 }
 .compra:hover{
-    background-image: url(../img/fondo_vini_compra.png);
+    background-image: url(../assets/images/fondo_vini_compra.png);
     color: rgb(158, 12, 38);
     background-position: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
@@ -116,7 +121,7 @@
 /*Estilos del Pie de Pagina*/
 .footer{
     background-color: rgb(158, 12, 38);
-    background-image: url(img/fondo-footer.png);
+    background-image: url(../assets/images/fondo-footer.png);
     background-size: cover;
     background-position: top; 
 }
