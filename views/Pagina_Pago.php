@@ -22,86 +22,230 @@
     <section class="container">
         <div class="row mt-3">
             <!-- 1ra Columna Formulario Comprador -->
-            <div class="col-sm-12 col-md-6 col-lg-6 mx-auto pb-3">
-                <!-- Campos Obligatorios -->
-                <div class="card mt-3 needs-validation was-validated">
-                    <h4 class="card-header">
-                        Datos del Comprador
-                    </h4>
-                    <!-- Campo Selector Tipo Documento -->
-                    <div class="col-sm-12 col-md-12 px-3 mt-3">
-                        <div class="form-floating ">
-                            <select class="form-select" id="tipo_Documento_Pasajero" required>
-                                <option selected disabled></option>
-                                <option value="1"> RUC</option> 
-                                <option value="2">DNI</option>
-                                <option value="3">Carnet de Extranjeria</option>
-                                <option value="4"> Pasaporte</option>
-                            </select>
-                            <label for="tipo_Documento_Pasajero">
-                            Tipo de Documento*</label>
-                            <div class="invalid-feedback">Campo Obligatorio</div>
-                        </div>
-                    </div>
-                    <!-- Campo Num Documento  -->
-                    <div class="col-sm-12 cold-md-3 px-3 my-3">
-                        <div class="form-floating">
-                            <input class="form-control" type="text" id="num_Documento_Comprador" required>
-                            <label for="num_Documento_Comprador">N° Documento* / Pasaporte* / Carnet de Extranjeria*</label>
-                            <div class="invalid-feedback">Campo Obligatorio</div>
-                        </div>
-                    </div>
-                    <!-- Campo Nombre o Racon Social -->
-                    <div class="col-sm-12 cold-md-3 px-3 mb-3">
-                        <div class="form-floating">
-                            <input class="form-control" type="text" id="nombre_Comprador" required>
-                            <label for="num_Documento_Comprador">Nombre o Razon Social*</label>
-                            <div class="invalid-feedback">Campo Obligatorio</div>
-                        </div>
-                    </div>
-                    <!-- Campo Direccion -->
-                    <div class="col-sm-12 cold-md-3 px-3 mb-3">
-                        <div class="form-floating">
-                            <input class="form-control" type="text" id="direccion_Comprador" required>
-                            <label for="direccion_Comprador">Direccion*</label>
-                            <div class="invalid-feedback">Campo Obligatorio</div>
-                        </div>
-                    </div>
-                    <!-- Campo Telefono -->
-                    <div class="col-sm-12 cold-md-3 px-3 mb-3">
-                        <div class="form-floating">
-                            <input class="form-control" type="text" id="telefono_Comprador" required>
-                            <label for="telefono_Comprador">Telefono*</label>
-                            <div class="invalid-feedback">Campo Obligatorio</div>
-                        </div>
-                    </div>
-                    <!-- Campo Correo -->
-                    <div class="col-sm-12 cold-md-3 px-3 mb-3">
-                        <div class="form-floating">
-                            <input class="form-control" type="text" id="correo_Comprador" required>
-                            <label for="correo_Comprador">Correo*</label>
-                            <div class="invalid-feedback">Campo Obligatorio</div>
-                        </div>
-                    </div>
-                    <!-- Checkbox Politicas - Datos -->
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6">
-                            <!--Politicas de Privacidad -->
-                            <div class="form-check col-md-12 ms-3">
-                                <input class="form-check-input" type="checkbox" value="" id="checkbox_Politicas" required>
-                                <label class="form-check-label" for="checkbox_Politicas"> Politicas de Seguridad</label>
-                                <div class="invalid-feedback">Debe de estar deacuerdo con los terminos</div>
+            <form class="col-sm-12 cold-md-6 col-lg-6 mb-3 border-3 rounded-2 mx-auto">
+                <h1 class="text-center">Reserva de Boletas</h1>
+                <!-- Cuadro Informativo -->
+                <div class="row">
+                    <div class="form-floating col-12 col-md-12 col-lg-12 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Informacion Importante 
                             </div>
-                            <!-- Tratamiento de Datos -->
-                            <div class="form-check col-md-12 ms-3 mb-3">
-                                <input class="form-check-input" type="checkbox" value="" id="checkbox_Politicas" required>
-                                <label class="form-check-label" for="checkbox_Politicas"> Tramiento de Datos</label>
-                                <div class="invalid-feedback">Debe de estar deacuerdo con los terminos</div>
+                            <div class="card-body">
+                                <ul class="card-text">
+                                    <li>Maximo 5 visitantes por reserva como Persona Natural y 10 visitantes como Personsa Juridica.</li>
+                                    <li>Son menores todos los visitantes entre los 3 y 17 años.</li>
+                                    <li>Niños menores a 3 años no pagan, previa presentación de un documento, pasaporte o DNI que acredite la edad.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                
+                <!-- 1er Formulario T. Persona - Fecha Reserva - Tarifa - Rutas -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 mb-3">
+                        <div class="form-floating">
+                            <select class="form-select" id="tipo_Persona">
+                                <option selected disabled></option>
+                                <option value="1">Persona Natural</option>
+                                <option value="2">Persona Juridica</option>
+                            </select>
+                            <label for="tipo_Persona"> Tipo de Persona</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 mb-3">
+                        <div class="form-floating"> 
+                            <select class="form-select" id="seleccion_Tarifa">
+                                <option selected disabled></option>
+                                <option value="1">Tarifa General - Visitantes Extranjeros</option>
+                                <option value="2">Tarifa General - Visitantes Nacionales</option>
+                            </select>
+                            <label for="seleccion_Tarifa">Tarifas</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 mb-3">
+                        <div class="form-floating"> 
+                            <select class="form-select" id="seleccion_Ruta">
+                                <option selected disabled></option>
+                                <option value="1">Circuito A</option>
+                                <option value="2">Circuito B</option>
+                                <option value="3">Circuito C</option>
+                                <option value="4">Circuito D</option>
+                            </select>
+                            <label for="seleccion_Ruta">Rutas</label>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="row">
+                    <!-- Formulario Acordion Horarios -->
+                    <div class="col-sm-12 col-md-12 cold-lg-12 border-3 rounded-2 mx-auto mb-3">
+                        <div class="col-12 col-md-12 col-lg-12 mb-3">
+                            <div class="form-floating">
+                                <input class="form-control" type="date" id="seleccion_Fecha_Reserva" min='<?php echo date('Y-m-d');?>'>
+                                <label for="seleccion_Fecha_Reserva">Fecha Reserva</label>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="accordion" id="acordion_Horarios">
+                                <!-- 1er Acordion - Fecha Actual -->
+                                <div class="accordion-item">
+                                    <button class="form-floating accordion-header accordion-button" type="button" id="seleccion_Horarios" data-bs-toggle="collapse" data-bs-target="#panel_Horario_Hoy" aria_expanded="true" aria-controls="panel_Horario_Hoy">
+                                        <label for="seleccion_Horarios">Horarios</labe>
+                                    </button>
+                                    <!-- Estructura Horarios -->
+                                    <div class="accordion-collapse collapse" id="panel_Horario_Hoy">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <!-- 1er Horario -->
+                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
+                                                    <div class="btn-group gap-2" role="group">
+                                                        <div class="card-body">
+                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario01" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="horario01">
+                                                                <h3 class="card-title"> 07:00 - 09:00</h3>
+                                                                <p class="card-text"> 101 CUPOS DISPONIBLES</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 2er Horario -->
+                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
+                                                    <div class="btn-group gap-3" role="group">
+                                                        <div class="card-body">
+                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario02" autocomplete="off" disabled>
+                                                            <label class="btn btn-outline-secondary" for="horario02">
+                                                                <h3 class="car-title"> 09:00 - 11:00</h3>
+                                                                <p class="card-text"> 0 CUPOS AGOTADO </p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 3er Horario -->
+                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
+                                                    <div class="btn-group gap-3" role="group">
+                                                        <div class="card-body">
+                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario03" autocomplete="off" disabled>
+                                                            <label class="btn btn-outline-secondary" for="horario03">
+                                                                <h3 class="car-title"> 11:00 - 13:00</h3>
+                                                                <p class="card-text"> 0 CUPOS AGOTADO </p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                                <!-- 4to Horario -->
+                                                <div class ="card-text-center col-sm-4 col-md-4 col-lg-4 col-md-2 mb-3">
+                                                    <div class="btn-group gap-3" role="group">
+                                                        <div class="card-body">
+                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off" disabled>
+                                                            <label class="btn btn-outline-secondary" for="horario04">
+                                                                <h3 class="car-title"> 13:00 - 15:00</h3>
+                                                                <p class="card-text"> 0 CUPOS AGOTADO</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 5to Horario -->
+                                                <div class ="card-text-center col-sm-2 col-md-2 col-lg-4 mb-3">
+                                                    <div class="btn-group gap-3" role="group">
+                                                        <div class="card-body">
+                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario05" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="horario05">
+                                                                <h3 class="car-title"> 15:00 - 17:00</h3>
+                                                                <p class="card-text"> 129 CUPOS DISPONIBLES</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 6to Horario -->
+                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
+                                                    <div class="btn-group gap-3" role="group">
+                                                        <div class="card-body">
+                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario06" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="horario06">
+                                                                <h3 class="car-title"> 17:00 - 19:00</h3>
+                                                                <p class="card-text"> 197 CUPOS DISPONIBLES</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2do Formulario Adulto - Adulto Mayor - Niños -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="form-floating mb-3">
+                            <div class="container">
+                                <div class="form-control btn-group" role="group">
+                                    <div class="col-md">
+                                        <label for="tipo_Adultos"> Adulto</label>
+                                    </div>
+                                    <div class="">
+                                    <button class="btn btn-outline-danger" type="button"> 
+                                        <i class="bi bi-dash-circle text-dark"></i>
+                                    </button>
+                                    <span>
+                                        <?php 
+                                        // include "../controllers/botones.php";
+                                        ?> 
+                                    </span>
+                                    <button class="btn btn-outline-danger" type="button"> 
+                                        <i class="bi bi-plus-circle text-dark"></i>
+                                    </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- <div class="form-floating">
+                                <input class="form-control" type="number" id="tipo_Adultos" min="0" max="10">
+                                <label for="tipo_Adultos"> Adulto</label>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="numer" id="tipo_Adulto_Mayor" min="0" max="10">
+                            <label for="tipo_Adulto_Mayor">Adulto Mayor</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-12">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="numer" id="tipo_Niños" min="0" max="10">
+                            <label for="tipo_Niños">Niños (3 a 17 años)</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3ro Info Total - Precio -->
+                <div class="row">
+                    <div class="d-flex mb-3">
+                        <div class="p-2">
+                            <h4>
+                                Total <span class="badge rounded-pill bg-danger">3</span>
+                            </h4>    
+                        </div>
+                        <div class="ms-auto p-2">
+                            <h4>
+                                s/ 220.00
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Boton Buscar Horario -->
+                <!-- <div class="d-grid gap-2 col-12 col-md-12 col-lg-12 mx-auto mt-3">
+                    <a href="./Pagina_Compra_Realizada.php" class="btn btn-danger btn-lg mb-3">Registrar Pasajeros</a>
+                </div> -->
+            </form>
             <!-- 2da Columna Modulo de Pagos -->
             <div class="col-sm-12 cold-md-6 col-lg-6 mx-auto pb-3">
                 <div class="card mt-3">
@@ -175,12 +319,7 @@
                                     <h2 class="card-title text-center">s/ 220.00</h2>
                                     <p class="card-text text-center">Monto a Pagar</p>
                                 </div>
-                                <!-- Boton de Pagar -->
-                                <div>
-                                    <div class="d-grid p-3">
-                                        <a class="btn btn-danger btn-lg" type="button" href="./Pagina_Compra_Realizada.php">PAGAR</a>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>    
                     </div>

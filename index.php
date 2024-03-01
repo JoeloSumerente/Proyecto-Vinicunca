@@ -21,8 +21,10 @@ switch ($page) {
         break;
     case 'Pagina_Compra_Realizada':
         require_once './views/Pagina_Compra_Realizada.php';
-        break; 
-           
+        break;
+    case 'example':
+        require_once './controllers/botones.php';
+        break;           
     // Agregar más casos para otras páginas
     default:
         require_once './Pagina_Principal.php';
