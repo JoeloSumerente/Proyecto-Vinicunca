@@ -30,3 +30,4 @@ switch ($page) {
         require_once './Pagina_Principal.php';
         break;
 }
+// BIENVENIDO
