@@ -21,233 +21,489 @@
     <!-- Seccion -->
     <section class="container">
         <div class="row mt-3">
-            <!-- 1ra Columna Formulario Comprador -->
-            <form class="col-sm-12 cold-md-6 col-lg-6 mb-3 border-3 rounded-2 mx-auto">
-                <h1 class="text-center">Reserva de Boletas</h1>
-                <!-- Cuadro Informativo -->
-                <div class="row">
-                    <div class="form-floating col-12 col-md-12 col-lg-12 mb-3">
-                        <div class="card">
-                            <div class="card-header">
-                                Informacion Importante 
-                            </div>
-                            <div class="card-body">
-                                <ul class="card-text">
-                                    <li>Maximo 5 visitantes por reserva como Persona Natural y 10 visitantes como Personsa Juridica.</li>
-                                    <li>Son menores todos los visitantes entre los 3 y 17 años.</li>
-                                    <li>Niños menores a 3 años no pagan, previa presentación de un documento, pasaporte o DNI que acredite la edad.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 1er Formulario T. Persona - Fecha Reserva - Tarifa - Rutas -->
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12 mb-3">
-                        <div class="form-floating">
-                            <select class="form-select" id="tipo_Persona">
-                                <option selected disabled></option>
-                                <option value="1">Persona Natural</option>
-                                <option value="2">Persona Juridica</option>
-                            </select>
-                            <label for="tipo_Persona"> Tipo de Persona</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-12 mb-3">
-                        <div class="form-floating"> 
-                            <select class="form-select" id="seleccion_Tarifa">
-                                <option selected disabled></option>
-                                <option value="1">Tarifa General - Visitantes Extranjeros</option>
-                                <option value="2">Tarifa General - Visitantes Nacionales</option>
-                            </select>
-                            <label for="seleccion_Tarifa">Tarifas</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-12 mb-3">
-                        <div class="form-floating"> 
-                            <select class="form-select" id="seleccion_Ruta">
-                                <option selected disabled></option>
-                                <option value="1">Circuito A</option>
-                                <option value="2">Circuito B</option>
-                                <option value="3">Circuito C</option>
-                                <option value="4">Circuito D</option>
-                            </select>
-                            <label for="seleccion_Ruta">Rutas</label>
-                        </div>
-                    </div>
-                    
+            <!-- 1ra Columna Registro de Pasajeros -->
+            <div class="col-sm-12 cold-md-8 col-lg-8 border-3 rounded-2 mx-auto my-3">
+                <h1>Registro de Pasajeros</h1>
+                <div class="accordion" id="acordion_Registro_Pasajeros">
+                    <!-- 1er Acordion Formulario - Pasajero -->
+                    <div class="accordion-item">
+                        <!-- Titulo -->
+                        <h2 class="accordion-header">
+                            <button class="accordion-button d-inline-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Registro_Pasajeros_01" aria_expanded="true" aria-controls="panel_Registro_Pasajeros01">
+                                01 Pasajero
+                            </button>
+                        </h2>
+                        <!-- Campos de Registro Pasajero -->
+                        <div class="accordion-collapse collapse show" id="panel_Registro_Pasajeros_01">
+                            <div class="accordion-body">
+                                <!-- Formulario Campos Obligatorios -->
+                                <div class="row" novalidate>
+                                    <!-- Selector Tipo de Documento -->
+                                    <div class="col-sm-12 col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select class="form-select" id="tipo_Documento_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">DNI</option>
+                                                <option value="2">Carnet de Extranjeria</option>
+                                                <option value="3"> Pasaporte</option>
+                                            </select>
+                                            <label for="tipo_Documento_Pasajero">
+                                                Tipo de Documento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
 
-                </div>
+                                    <!-- Campo Numero de Documento -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="num_Documento_Pasajero" required>
+                                            <label for="num_Documento_Pasajero">N° Documento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+                                    <!-- Selector de Genero -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select class="form-select" id="tipo_Genero_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">Femenino</option>
+                                                <option value="2">Masculino</option>
+                                                <option value="3"> Binario</option>
+                                            </select>
+                                            <label for="tipo_Genero_Pasajero">
+                                                Genero*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
 
-                <div class="row">
-                    <!-- Formulario Acordion Horarios -->
-                    <div class="col-sm-12 col-md-12 cold-lg-12 border-3 rounded-2 mx-auto mb-3">
-                        <div class="col-12 col-md-12 col-lg-12 mb-3">
-                            <div class="form-floating">
-                                <input class="form-control" type="date" id="seleccion_Fecha_Reserva" min='<?php echo date('Y-m-d');?>'>
-                                <label for="seleccion_Fecha_Reserva">Fecha Reserva</label>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="accordion" id="acordion_Horarios">
-                                <!-- 1er Acordion - Fecha Actual -->
-                                <div class="accordion-item">
-                                    <button class="form-floating accordion-header accordion-button" type="button" id="seleccion_Horarios" data-bs-toggle="collapse" data-bs-target="#panel_Horario_Hoy" aria_expanded="true" aria-controls="panel_Horario_Hoy">
-                                        <label for="seleccion_Horarios">Horarios</labe>
-                                    </button>
-                                    <!-- Estructura Horarios -->
-                                    <div class="accordion-collapse collapse" id="panel_Horario_Hoy">
-                                        <div class="accordion-body">
-                                            <div class="row">
-                                                <!-- 1er Horario -->
-                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
-                                                    <div class="btn-group gap-2" role="group">
-                                                        <div class="card-body">
-                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario01" autocomplete="off">
-                                                            <label class="btn btn-outline-primary" for="horario01">
-                                                                <h3 class="card-title"> 07:00 - 09:00</h3>
-                                                                <p class="card-text"> 101 CUPOS DISPONIBLES</p>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- 2er Horario -->
-                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
-                                                    <div class="btn-group gap-3" role="group">
-                                                        <div class="card-body">
-                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario02" autocomplete="off" disabled>
-                                                            <label class="btn btn-outline-secondary" for="horario02">
-                                                                <h3 class="car-title"> 09:00 - 11:00</h3>
-                                                                <p class="card-text"> 0 CUPOS AGOTADO </p>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- 3er Horario -->
-                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
-                                                    <div class="btn-group gap-3" role="group">
-                                                        <div class="card-body">
-                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario03" autocomplete="off" disabled>
-                                                            <label class="btn btn-outline-secondary" for="horario03">
-                                                                <h3 class="car-title"> 11:00 - 13:00</h3>
-                                                                <p class="card-text"> 0 CUPOS AGOTADO </p>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>  
-                                                <!-- 4to Horario -->
-                                                <div class ="card-text-center col-sm-4 col-md-4 col-lg-4 col-md-2 mb-3">
-                                                    <div class="btn-group gap-3" role="group">
-                                                        <div class="card-body">
-                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off" disabled>
-                                                            <label class="btn btn-outline-secondary" for="horario04">
-                                                                <h3 class="car-title"> 13:00 - 15:00</h3>
-                                                                <p class="card-text"> 0 CUPOS AGOTADO</p>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- 5to Horario -->
-                                                <div class ="card-text-center col-sm-2 col-md-2 col-lg-4 mb-3">
-                                                    <div class="btn-group gap-3" role="group">
-                                                        <div class="card-body">
-                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario05" autocomplete="off">
-                                                            <label class="btn btn-outline-primary" for="horario05">
-                                                                <h3 class="car-title"> 15:00 - 17:00</h3>
-                                                                <p class="card-text"> 129 CUPOS DISPONIBLES</p>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- 6to Horario -->
-                                                <div class ="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
-                                                    <div class="btn-group gap-3" role="group">
-                                                        <div class="card-body">
-                                                            <input type="radio" class="btn-check" name="boton_Horarios" id="horario06" autocomplete="off">
-                                                            <label class="btn btn-outline-primary" for="horario06">
-                                                                <h3 class="car-title"> 17:00 - 19:00</h3>
-                                                                <p class="card-text"> 197 CUPOS DISPONIBLES</p>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- Campo Fecha de Nacimiento -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="date" id="fecha_Nacimiento_Pasajero" required>
+                                            <label for="fecha_Nacimiento_Pasajero">Fecha de Nacimiento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Nombres -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="nombre_Pasajero" required>
+                                            <label for="nombre_Pasajero">Nombres*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Apellidos -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="apellido_Pasajero" required>
+                                            <label for="apellido_Pasajero"> Apellidos*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Selector Nacionalidad -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select data-bs-spy="scroll" data-bs-offset="0" data-bs-smooth-scroll="true" class="form-select" tabindex="0" id="tipo_Nacionalidad_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">Alemania</option>
+                                                <option value="2">Argentina</option>
+                                                <option value="3">Australia</option>
+                                                <option value="4">Austria</option>
+                                                <option value="5">Bolivia</option>
+                                                <option value="6">Brasil</option>
+                                                <option value="7">Belgica</option>
+                                                <option value="8">Canada</option>
+                                                <option value="9">Chile</option>
+                                                <option value="10">China</option>
+                                                <option value="11">Colombia</option>
+                                                <option value="12">Costa Rica</option>
+                                                <option value="13">Cuba</option>
+                                                <option value="14">Dinamarca</option>
+                                                <option value="15">Ecuador</option>
+                                                <option value="16">España</option>
+                                                <option value="17">Finlandia</option>
+                                                <option value="18">Francia</option>
+                                                <option value="19">Honduras</option>
+                                                <option value="20">Italia</option>
+                                                <option value="21">Japon</option>
+                                                <option value="22">Kuwait</option>
+                                                <option value="23">Lituania</option>
+                                                <option value="24">Marruecos</option>
+                                                <option value="25">Noruega</option>
+                                                <option value="26">Nueva Zelanda</option>
+                                                <option value="27">Paraguay</option>
+                                                <option value="28">Paises Bajos</option>
+                                                <option value="29">Peru</option>
+                                                <option value="30">Portugal</option>
+                                                <option value="31">Rusia</option>
+                                                <option value="32">Suecia</option>
+                                                <option value="33">Suiza</option>
+                                                <option value="34">Ucrania</option>
+                                                <option value="35">Uruguay</option>
+                                                <option value="36">Venezuela</option>
+                                                <option value="37">Otros</option>
+                                            </select>
+                                            <label for="tipo_Nacionalidad_Pasajero">
+                                                Nacionalidad</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2do Formulario Adulto - Adulto Mayor - Niños -->
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12">
-                        <div class="form-floating mb-3">
-                            <div class="container">
-                                <div class="form-control btn-group" role="group">
-                                    <div class="col-md">
-                                        <label for="tipo_Adultos"> Adulto</label>
+
+                                <!-- Campos Formulario Opcionales -->
+                                <div class="row">
+                                    <!-- Campo Direccio -->
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="text" id="direccion_Pasajero">
+                                            <label for="direccion_Pasajero">Direccion</label>
+                                        </div>
                                     </div>
-                                    <div class="">
-                                    <button class="btn btn-outline-danger" type="button"> 
-                                        <i class="bi bi-dash-circle text-dark"></i>
-                                    </button>
-                                    <span>
-                                        <?php 
-                                        // include "../controllers/botones.php";
-                                        ?> 
-                                    </span>
-                                    <button class="btn btn-outline-danger" type="button"> 
-                                        <i class="bi bi-plus-circle text-dark"></i>
-                                    </button>
+                                    <!-- Campo Correo -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="email" id="correo_Pasajero">
+                                            <label for="correo_Pasajero">Correo Electronico</label>
+                                        </div>
                                     </div>
-                                    
+                                    <!-- Campo Telefono -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="text" id="telefono_Pasajero">
+                                            <label for="telefono_Pasajero"> Telefono</label>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <!-- <div class="form-floating">
-                                <input class="form-control" type="number" id="tipo_Adultos" min="0" max="10">
-                                <label for="tipo_Adultos"> Adulto</label>
-                            </div> -->
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-12">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" type="numer" id="tipo_Adulto_Mayor" min="0" max="10">
-                            <label for="tipo_Adulto_Mayor">Adulto Mayor</label>
+
+                    <!-- 2do Acordion Formulalrio - Pasajero -->
+                    <div class="accordion-item">
+                        <!-- Titulo -->
+                        <h2 class="accordion-header">
+                            <button class="accordion-button d-inline-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Registro_Pasajeros_02" aria_expanded="true" aria-controls="panel_Registro_Pasajeros_02">
+                                02 Pasajero
+                            </button>
+                        </h2>
+                        <!-- Campos de Registro Pasajero -->
+                        <div class="accordion-collapse collapse" id="panel_Registro_Pasajeros_02">
+                            <div class="accordion-body">
+                                <!-- Formulario Campos Obligatorios -->
+                                <div class="row" novalidate>
+                                    <!-- Selector Tipo de Documento -->
+                                    <div class="col-sm-12 col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select class="form-select" id="tipo_Documento_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">DNI</option>
+                                                <option value="2">Carnet de Extranjeria</option>
+                                                <option value="3"> Pasaporte</option>
+                                            </select>
+                                            <label for="tipo_Documento_Pasajero">
+                                                Tipo de Documento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Numero de Documento -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="num_Documento_Pasajero" required>
+                                            <label for="num_Documento_Pasajero">N° Documento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+                                    <!-- Selector de Genero -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select class="form-select" id="tipo_Genero_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">Femenino</option>
+                                                <option value="2">Masculino</option>
+                                                <option value="3"> Binario</option>
+                                            </select>
+                                            <label for="tipo_Genero_Pasajero">
+                                                Genero*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Fecha de Nacimiento -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="date" id="fecha_Nacimiento_Pasajero" required>
+                                            <label for="fecha_Nacimiento_Pasajero">Fecha de Nacimiento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Nombres -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="nombre_Pasajero" required>
+                                            <label for="nombre_Pasajero">Nombres*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Apellidos -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="apellido_Pasajero" required>
+                                            <label for="apellido_Pasajero"> Apellidos*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Selector Nacionalidad -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select data-bs-spy="scroll" data-bs-offset="0" data-bs-smooth-scroll="true" class="form-select" tabindex="0" id="tipo_Nacionalidad_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">Alemania</option>
+                                                <option value="2">Argentina</option>
+                                                <option value="3">Australia</option>
+                                                <option value="4">Austria</option>
+                                                <option value="5">Bolivia</option>
+                                                <option value="6">Brasil</option>
+                                                <option value="7">Belgica</option>
+                                                <option value="8">Canada</option>
+                                                <option value="9">Chile</option>
+                                                <option value="10">China</option>
+                                                <option value="11">Colombia</option>
+                                                <option value="12">Costa Rica</option>
+                                                <option value="13">Cuba</option>
+                                                <option value="14">Dinamarca</option>
+                                                <option value="15">Ecuador</option>
+                                                <option value="16">España</option>
+                                                <option value="17">Finlandia</option>
+                                                <option value="18">Francia</option>
+                                                <option value="19">Honduras</option>
+                                                <option value="20">Italia</option>
+                                                <option value="21">Japon</option>
+                                                <option value="22">Kuwait</option>
+                                                <option value="23">Lituania</option>
+                                                <option value="24">Marruecos</option>
+                                                <option value="25">Noruega</option>
+                                                <option value="26">Nueva Zelanda</option>
+                                                <option value="27">Paraguay</option>
+                                                <option value="28">Paises Bajos</option>
+                                                <option value="29">Peru</option>
+                                                <option value="30">Portugal</option>
+                                                <option value="31">Rusia</option>
+                                                <option value="32">Suecia</option>
+                                                <option value="33">Suiza</option>
+                                                <option value="34">Ucrania</option>
+                                                <option value="35">Uruguay</option>
+                                                <option value="36">Venezuela</option>
+                                                <option value="37">Otros</option>
+                                            </select>
+                                            <label for="tipo_Nacionalidad_Pasajero">
+                                                Nacionalidad</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Campos Formulario Opcionales -->
+                                <div class="row">
+                                    <!-- Campo Direccion -->
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="text" id="direccion_Pasajero">
+                                            <label for="direccion_Pasajero">Direccion</label>
+                                        </div>
+                                    </div>
+                                    <!-- Campo Correo -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="email" id="correo_Pasajero">
+                                            <label for="correo_Pasajero">Correo Electronico</label>
+                                        </div>
+                                    </div>
+                                    <!-- Campo Telefono -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="text" id="telefono_Pasajero">
+                                            <label for="telefono_Pasajero"> Telefono</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-12">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" type="numer" id="tipo_Niños" min="0" max="10">
-                            <label for="tipo_Niños">Niños (3 a 17 años)</label>
+
+                    <!-- 3ro Acordion Formulalrio - Pasajero -->
+                    <div class="accordion-item">
+                        <!-- Titulo -->
+                        <h2 class="accordion-header">
+                            <button class="accordion-button d-inline-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Registro_Pasajeros_03" aria_expanded="true" aria-controls="panel_Registro_Pasajeros_03">
+                                03 Pasajero
+                            </button>
+                        </h2>
+                        <!-- Campos de Registro Pasajero -->
+                        <div class="accordion-collapse collapse" id="panel_Registro_Pasajeros_03">
+                            <div class="accordion-body">
+                                <!-- Formulario Campos Obligatorios -->
+                                <div class="row" novalidate>
+                                    <!-- Selector Tipo de Documento -->
+                                    <div class="col-sm-12 col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select class="form-select" id="tipo_Documento_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">DNI</option>
+                                                <option value="2">Carnet de Extranjeria</option>
+                                                <option value="3"> Pasaporte</option>
+                                            </select>
+                                            <label for="tipo_Documento_Pasajero">
+                                                Tipo de Documento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Numero de Documento -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="num_Documento_Pasajero" required>
+                                            <label for="num_Documento_Pasajero">N° Documento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+                                    <!-- Selector de Genero -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select class="form-select" id="tipo_Genero_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">Femenino</option>
+                                                <option value="2">Masculino</option>
+                                                <option value="3"> Binario</option>
+                                            </select>
+                                            <label for="tipo_Genero_Pasajero">
+                                                Genero*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Fecha de Nacimiento -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="date" id="fecha_Nacimiento_Pasajero" required>
+                                            <label for="fecha_Nacimiento_Pasajero">Fecha de Nacimiento*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Nombres -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="nombre_Pasajero" required>
+                                            <label for="nombre_Pasajero">Nombres*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Campo Apellidos -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <input class="form-control" type="text" id="apellido_Pasajero" required>
+                                            <label for="apellido_Pasajero"> Apellidos*</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Selector Nacionalidad -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-floating needs-validation was-validated">
+                                            <select data-bs-spy="scroll" data-bs-offset="0" data-bs-smooth-scroll="true" class="form-select" tabindex="0" id="tipo_Nacionalidad_Pasajero" required>
+                                                <option selected disabled></option>
+                                                <option value="1">Alemania</option>
+                                                <option value="2">Argentina</option>
+                                                <option value="3">Australia</option>
+                                                <option value="4">Austria</option>
+                                                <option value="5">Bolivia</option>
+                                                <option value="6">Brasil</option>
+                                                <option value="7">Belgica</option>
+                                                <option value="8">Canada</option>
+                                                <option value="9">Chile</option>
+                                                <option value="10">China</option>
+                                                <option value="11">Colombia</option>
+                                                <option value="12">Costa Rica</option>
+                                                <option value="13">Cuba</option>
+                                                <option value="14">Dinamarca</option>
+                                                <option value="15">Ecuador</option>
+                                                <option value="16">España</option>
+                                                <option value="17">Finlandia</option>
+                                                <option value="18">Francia</option>
+                                                <option value="19">Honduras</option>
+                                                <option value="20">Italia</option>
+                                                <option value="21">Japon</option>
+                                                <option value="22">Kuwait</option>
+                                                <option value="23">Lituania</option>
+                                                <option value="24">Marruecos</option>
+                                                <option value="25">Noruega</option>
+                                                <option value="26">Nueva Zelanda</option>
+                                                <option value="27">Paraguay</option>
+                                                <option value="28">Paises Bajos</option>
+                                                <option value="29">Peru</option>
+                                                <option value="30">Portugal</option>
+                                                <option value="31">Rusia</option>
+                                                <option value="32">Suecia</option>
+                                                <option value="33">Suiza</option>
+                                                <option value="34">Ucrania</option>
+                                                <option value="35">Uruguay</option>
+                                                <option value="36">Venezuela</option>
+                                                <option value="37">Otros</option>
+                                            </select>
+                                            <label for="tipo_Nacionalidad_Pasajero">
+                                                Nacionalidad</label>
+                                            <div class="invalid-feedback">Campo Obligatorio</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Campos Formulario Opcionales -->
+                                <div class="row">
+                                    <!-- Campo Direccion -->
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="text" id="direccion_Pasajero">
+                                            <label for="direccion_Pasajero">Direccion</label>
+                                        </div>
+                                    </div>
+                                    <!-- Campo Correo -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="email" id="correo_Pasajero">
+                                            <label for="correo_Pasajero">Correo Electronico</label>
+                                        </div>
+                                    </div>
+                                    <!-- Campo Telefono -->
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-floating">
+                                            <input class="form-control" type="text" id="telefono_Pasajero">
+                                            <label for="telefono_Pasajero"> Telefono</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Recordatorio -->
+                    <div class="form-text text-justify">
+                        "¡Recordatorio! Por favor, asegúrate de completar todos los campos obligatorios en el formulario antes de enviar. Tu información es fundamental para brindarte el mejor servicio posible. ¡Gracias por tu colaboración!</div>
                 </div>
-                <!-- 3ro Info Total - Precio -->
-                <div class="row">
-                    <div class="d-flex mb-3">
-                        <div class="p-2">
-                            <h4>
-                                Total <span class="badge rounded-pill bg-danger">3</span>
-                            </h4>    
-                        </div>
-                        <div class="ms-auto p-2">
-                            <h4>
-                                s/ 220.00
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Boton Buscar Horario -->
-                <!-- <div class="d-grid gap-2 col-12 col-md-12 col-lg-12 mx-auto mt-3">
-                    <a href="./Pagina_Compra_Realizada.php" class="btn btn-danger btn-lg mb-3">Registrar Pasajeros</a>
-                </div> -->
-            </form>
+            </div>
+            
             <!-- 2da Columna Modulo de Pagos -->
-            <div class="col-sm-12 cold-md-6 col-lg-6 mx-auto pb-3">
+            <div class="col-sm-12 cold-md-4 col-lg-4 mx-auto my-5">
                 <div class="card mt-3">
                     <h4 class="card-header">Modulo de Pago</h4>
                     <!--1.- PAGO VISA -->
@@ -319,7 +575,11 @@
                                     <h2 class="card-title text-center">s/ 220.00</h2>
                                     <p class="card-text text-center">Monto a Pagar</p>
                                 </div>
-                                
+                                <div class="pb-4">
+                                    <div class="d-grid px-3 pt-3">
+                                        <a class="btn btn-danger btn-lg" type="button" href="./Pagina_Compra_Realizada.php">PAGAR</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>    
                     </div>
