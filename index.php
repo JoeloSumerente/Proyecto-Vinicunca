@@ -14,7 +14,7 @@ switch ($page) {
         require_once './views/Reserva_Boletos.php';
         break; 
     case 'Pagina_Registro_Pasajeros':
-        require_once './views/Pagina_Registro_Pasajeros.php';
+        require_once './views/Pagina_Registro_Comprador.php';
         break;    
     case 'Pagina_Pago':
         require_once './views/Pagina_Pago.php';
