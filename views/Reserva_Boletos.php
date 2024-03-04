@@ -195,17 +195,9 @@
                               <h5>Informacion Importante</h5>
                             </div>
                             <div class="card-body">
-<<<<<<< Updated upstream
-                                <ul class="card-text">
-                                    <li>Maximo 5 visitantes por reserva como Persona Natural y 10 visitantes como Personsa Juridica.</li>
-                                    <li>Son menores todos los visitantes entre los 3 y 17 años.</li>
-                                    <li>Niños menores a 3 años no pagan, previa presentación de un documento, pasaporte o DNI que acredite la edad.
-                                    </li>
-=======
                                 <ul>
                                     <li>Persona Natural, maximo 3 visitantes por reserva.</li>
                                     <li>Persona Juridica, maximo 5 visitantes por reserva.</li>
->>>>>>> Stashed changes
                                 </ul>
                             </div>
                         </div>
@@ -351,38 +343,10 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12">
                         <div class="form-floating mb-3">
-<<<<<<< Updated upstream
-                            <div class="container">
-                                <div class="form-control btn-group" role="group">
-                                    <div class="col-md">
-                                        <label for="tipo_Adultos"> Adulto</label>
-                                    </div>
-                                    <div class="">
-                                        <button class="btn btn-outline-danger" type="button">
-                                            <i class="bi bi-dash-circle text-dark"></i>
-                                        </button>
-                                        <span>
-                                            <?php
-                                            // include "../controllers/botones.php";
-                                            ?>
-                                        </span>
-                                        <button class="btn btn-outline-danger" type="button">
-                                            <i class="bi bi-plus-circle text-dark"></i>
-                                        </button>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- <div class="form-floating">
-                                <input class="form-control" type="number" id="tipo_Adultos" min="0" max="10">
-                                <label for="tipo_Adultos"> Adulto</label>
-                            </div> -->
-=======
                             <div class="form-floating">
                                 <input class="form-control" type="number" id="cantidad_Boletos" min="0" max="10">
                                 <label for="cantidad_Boletos"> Cantidad de Boletos</label>
                             </div>
->>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
