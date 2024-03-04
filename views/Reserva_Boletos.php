@@ -40,24 +40,27 @@
                         <!-- Pestaña Tarifas -->
                         <div class="tab-content" id="contenido_Pestañas">
                             <div class="tab-pane fade show active" id="pestañas_Tarifas" role="tabpanel" aria-labelledby="tarifas_Tab" tabindex="0">
-                                <div class="accordion" id="acordion_Tarifa">
+                                <h6>Tarifario Unica General</h6>
+                                <ul>
+                                    <li> Tarifa General: s/ 30.00</li>
+
+                                </ul>
+                                <!-- <div class="accordion" id="acordion_Tarifa">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Tarifa_General" aria-expanded="true" aria-controls="panel_Tarifa_General">
-                                                Tarifa General - Visitantes extranjeros
+                                                Tarifa General
                                             </button>
                                         </h2>
                                         <div class="accordion-collapse collapse show" id="panel_Tarifa_General">
                                             <div class="accordion-body">
                                                 <div class="list-group">
-                                                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary mb-3"> Adulto - $40.00</a>
+                                                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary mb-3"> s/35.00</a>
                                                 </div>
                                                 <div class="list-group">
-                                                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary mb-3"> Adulto Mayor - $30.00 </a>
+                                                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary mb-3"> s/50.00</a>
                                                 </div>
-                                                <div class="list-group">
-                                                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary mb-3"> Niños - $20.00 </a>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -83,11 +86,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <!-- Pestaña Rutas -->
                             <div class="tab-pane fade mb-3" id="pestañas_Rutas" role="tabpanel" aria-labelledby="rutas_Tab" tabindex="0">
-                                <div class="accordion" id="acordion_Ruta">
+                                <h6>
+                                    Ruta Vinicunca
+                                </h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit exercitationem et iste alias, molestias, unde qui consequatur commodi dolorem doloremque repellendus maxime quaerat recusandae quibusdam at quidem, nesciunt tempore nobis?</p>
+                                <!-- <div class="accordion" id="acordion_Ruta">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Rutas_A" aria-expanded="true" aria-controls="panel_Rutas_A">
@@ -155,8 +162,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
+                            
                             <!-- Pestaña Recomendaciones -->
                             <div class="tab-pane fade mb-3" id="pestañas_Recomendaciones" role="tabpanel" aria-labelledby="recomendaciones-Tab" tabindex="0">
                                 <h6>Durante su visita a los destinos turisticos, se encuentran prohibido los siguientes:</h6>
@@ -184,14 +192,20 @@
                     <div class="form-floating col-12 col-md-12 col-lg-12 mb-3">
                         <div class="card">
                             <div class="card-header">
-                                Informacion Importante
+                              <h5>Informacion Importante</h5>
                             </div>
                             <div class="card-body">
+<<<<<<< Updated upstream
                                 <ul class="card-text">
                                     <li>Maximo 5 visitantes por reserva como Persona Natural y 10 visitantes como Personsa Juridica.</li>
                                     <li>Son menores todos los visitantes entre los 3 y 17 años.</li>
                                     <li>Niños menores a 3 años no pagan, previa presentación de un documento, pasaporte o DNI que acredite la edad.
                                     </li>
+=======
+                                <ul>
+                                    <li>Persona Natural, maximo 3 visitantes por reserva.</li>
+                                    <li>Persona Juridica, maximo 5 visitantes por reserva.</li>
+>>>>>>> Stashed changes
                                 </ul>
                             </div>
                         </div>
@@ -214,8 +228,7 @@
                         <div class="form-floating">
                             <select class="form-select" id="seleccion_Tarifa">
                                 <option selected disabled></option>
-                                <option value="1">Tarifa General - Visitantes Extranjeros</option>
-                                <option value="2">Tarifa General - Visitantes Nacionales</option>
+                                <option value="1">Tarifa General</option>
                             </select>
                             <label for="seleccion_Tarifa">Tarifas</label>
                         </div>
@@ -224,10 +237,7 @@
                         <div class="form-floating">
                             <select class="form-select" id="seleccion_Ruta">
                                 <option selected disabled></option>
-                                <option value="1">Circuito A</option>
-                                <option value="2">Circuito B</option>
-                                <option value="3">Circuito C</option>
-                                <option value="4">Circuito D</option>
+                                <option value="1">Ruta Vinicunca</option>
                             </select>
                             <label for="seleccion_Ruta">Rutas</label>
                         </div>
@@ -341,6 +351,7 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12">
                         <div class="form-floating mb-3">
+<<<<<<< Updated upstream
                             <div class="container">
                                 <div class="form-control btn-group" role="group">
                                     <div class="col-md">
@@ -366,18 +377,12 @@
                                 <input class="form-control" type="number" id="tipo_Adultos" min="0" max="10">
                                 <label for="tipo_Adultos"> Adulto</label>
                             </div> -->
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-12">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" type="numer" id="tipo_Adulto_Mayor" min="0" max="10">
-                            <label for="tipo_Adulto_Mayor">Adulto Mayor</label>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-12">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" type="numer" id="tipo_Niños" min="0" max="10">
-                            <label for="tipo_Niños">Niños (3 a 17 años)</label>
+=======
+                            <div class="form-floating">
+                                <input class="form-control" type="number" id="cantidad_Boletos" min="0" max="10">
+                                <label for="cantidad_Boletos"> Cantidad de Boletos</label>
+                            </div>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
