@@ -8,14 +8,17 @@
     font-family: arima-koshi-bold;
     src: url(../assets/fuentes/ArimaKoshi-Bold.ttf);
 }
+
 @font-face {
     font-family: arima-koshi-regular;
     src: url(../assets/fuentes/ArimaKoshi-Regular.ttf);
 }
+
 @font-face {
     font-family: RedHatDisplay-Bold;
     src: url(../assets/fuentes/RedHatDisplay-Bold.ttf);
 }
+
 @font-face {
     font-family: RedHatDisplay-Regular;
     src: url(../assets/fuentes/RedHatDisplay-Regular.ttf);
@@ -23,29 +26,33 @@
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'arima-koshi-bold', sans-serif;
-    font-weight: 700;
 }
 
-#header_Fondo{
+p {
+    font-family: arima-koshi-regular, sans-serif;
+}
+
+
+#header_Fondo {
     background-image: url(../assets/images/navbar_Fondo.png);
     background-size: cover;
 }
-#idioma{
-    width: 60px;
-    height: 30px;
-    padding: 8px 20px;
 
+#idioma {
+    padding: 15px;
 }
-#copyright_Footer{
+
+#copyright_Footer {
     color: white;
 }
-#parrafo_Historia{
-text-align: justify;
-font-family: cursive;
+
+#parrafo_Historia {
+    text-align: justify;
+    font-family: 'arima-koshi-regular';
 }
 
 /*Main*/
-.main{
+.main {
     max-width: 1100px;
     padding: 40px;
     margin: auto;
@@ -60,9 +67,10 @@ font-family: cursive;
     border-radius: 40px;
     padding: 0.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
-    
+
 }
-.compra{
+
+.compra {
     background-color: white;
     color: rgb(158, 12, 38);
     font-size: 18px;
@@ -72,20 +80,25 @@ font-family: cursive;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
     padding-left: 20px;
 }
-.compra:hover{
+
+.compra:hover {
     background-image: url(../assets/images/fondo_vini_compra.png);
     color: rgb(158, 12, 38);
     background-position: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none;
     font-size: 1.25rem;
 }
-.navbar-toggler:focus, .btn-close:focus{
+
+.navbar-toggler:focus,
+.btn-close:focus {
     box-shadow: none;
     outline: none;
 }
+
 .nav-links {
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -93,11 +106,14 @@ font-family: cursive;
     text-decoration: none;
     position: relative;
 }
-.nav-links:hover, .nav-links{
+
+.nav-links:hover,
+.nav-links {
     color: white;
     font-family: "RedHatDisplay-Bold", sans-serif;
 }
-.nav-links::before{
+
+.nav-links::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -109,34 +125,39 @@ font-family: cursive;
     visibility: hidden;
     transform: 0.3s ease-in-out;
 }
-.nav-links:hover::before{
+
+.nav-links:hover::before {
     width: 100%;
     visibility: visible;
 }
-.offcanvas{
+
+.offcanvas {
     background-color: rgb(158, 12, 38);
 }
 
-.offcanvas-title{
+.offcanvas-title {
     color: rgb(255, 255, 255);
 }
-.btn-close{
+
+.btn-close {
     background-color: white;
     color: white;
 }
 
 /*CAROUSEL*/
-.carousel-caption{
+.carousel-caption {
     bottom: 170px;
     z-index: 2;
-    right:  10%;
+    right: 10%;
 }
-.carousel-caption img{
+
+.carousel-caption img {
     text-align: right;
     margin-top: 25px;
 
 }
-.carousel-caption h5{
+
+.carousel-caption h5 {
     font-size: 70px;
     margin-top: 25px;
     color: rgb(255, 255, 255);
@@ -145,61 +166,80 @@ font-family: cursive;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 
 }
-.carousel-caption p{
+
+.carousel-caption p {
     text-align: right;
 }
 
 /*Estilos del Pie de Pagina*/
-.footer{
+.footer {
     background-color: rgb(158, 12, 38);
     background-image: url(../assets/images/footer_Fondo.webp);
     background-size: cover;
-    background-position: top; 
+    background-position: top;
 }
-.line{
+
+.line {
     width: 100%;
     height: auto;
 }
-.container-logo-historia{
+
+.container-logo-historia {
     text-align: center;
     padding: 30px;
 }
-.container-logo-historia img{
-    max-width: 100%; 
+
+.container-logo-historia img {
+    max-width: 100%;
     height: auto;
 }
-.text_items{
+
+.text_items {
     text-decoration: none;
     font-size: 17px;
 }
 
-.row p{
+.row p {
     font-size: 17px;
 }
-.text_items:hover{
+
+.text_items:hover {
     color: #0D6EFD;
 }
-.bi{
+
+.bi {
     color: rgb(255, 255, 255);
     font-size: 30px;
 }
-.bi:hover{
+
+.bi:hover {
     color: rgb(77, 71, 71);
 }
 
 /*Galeria Fotos*/
-#galeria{
+#galeria {
     padding-bottom: 60px;
 }
-#galeria img{
+
+#galeria img {
     width: 100%;
     height: 220px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
-#imagen_Galeria{
+
+#imagen_Galeria {
     margin: 0 !important;
     padding: 25px;
 }
-#galeria #imagen_Galeria:hover{
+
+#galeria #imagen_Galeria:hover {
     border: 10px solid #ffffff;
+}
+
+/*Estilos de ACORDION-PREGUNTAS FRECUENTES*/
+.accordion{
+    --bs-accordion-active-bg: rgb(158, 12, 38);
+    --bs-accordion-active-color: white;
+    --bs-accordion-icon-active-color: white;
+    --bs-accordion-icon-color: white;
 }

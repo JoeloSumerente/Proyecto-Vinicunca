@@ -22,59 +22,36 @@
             <div class="clearfix mkdf-section-inner">
                 <div class="p-5">
                     <div class="wpb_wrapper">
-                        <h2>Preguntas Frecuentes - Sobre la Montaña de los Siete Colores</h2>
+                        <h2>Preguntas Frecuentes</h2>
                     </div>
                     <div data-original-height="43" style="height: 43px"></div>
                     <div class="wpb_text_column wpb_content_element ">
                         <div class="wpb_wrapper">
-                            <p style="text-align: justify;"><strong>Montaña de los siete colores</strong> antes de ir,
-                                nos
-                                surgen un montón de preguntas, sobre la <strong>montaña arco iris</strong> o a cualquier
-                                otro
-                                lugar al que vamos a visitar, y aún más si deseamos tener una gran aventura inolvidable
-                                en ese
-                                lugar, para tener una gran aventura, debemos tener muy en claro ¿Cuándo ir? Y ¿Cómo ir?
-                                y muchas
-                                otras más, es por eso que tenemos para usted una lista de preguntas, que todos nos
-                                preguntamos
-                                al momento de realizar una gran excursión.</p>
+                            <p style="text-align: justify;">
+                                ViveVinicunca es muy fácil de usar. Donde encuentras los boletos de entrada a nuestra marravilla! Sin embargo, hay algunas dudas que siempre nos invaden, y a continuación las respondemos.</p>
                         </div>
                     </div>
                     <div data-original-height="43" style="height: 43px"></div>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    ¿Qué es Montaña de los siete colores, Vinicunca?
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Es seguro usar ViveVinicunca?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p class="text-justify">
-                                        La montaña de siete colores, Vinicunca llamado también montaña arco iris es una
-                                        nueva
-                                        maravilla en Peru en la ciudad de Cusco, Provincia de Quispicanchis, Distrito de
-                                        Pitumarca con altitud 5.200 msnm considerado como quita montaña más grande de
-                                        Peru. Esta
-                                        joya geológica recién se está haciendo conocido, además catalogado como uno de
-                                        los
-                                        lugares al que debemos viajar antes de morir.
-                                    </p>
-
+                                    <p class="text-justify">Claro que si. La seguridad de los datos, pagos y cobranzas de nuestros clientes es muy importante para nosotros. El registro y el cobro de entradas en nuestra plataforma. Con ViveVinicunca todo es muy fácil y seguro.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     ¿En qué tiempo ir?
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">Para ir a la montaña de los siete colores usted debe estar
                                         listo o
@@ -91,13 +68,11 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     ¿Cómo ir?
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">Hay dos formas de ir, una contratando una agencia de viajes
                                         y la otra por tu propia cuenta, si eres acostumbrado, a las caminatas largas
@@ -109,14 +84,12 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     ¿Cómo debe estar mi condición física para poder llegar a la montaña de los siete
                                     colores?
                                 </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">Estar seguro de tu buen estado de salud, sentirse al cien
                                         por ciento bien, sentirse capaz de dar la vuelta el mundo. Por la seguridad de
@@ -126,13 +99,11 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     ¿Cuánto tiempo debo caminar para llegar a la montaña de arcoiris?
                                 </button>
                             </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">El tiempo el que va caminar es depende de su condición
                                         físico, aproximadamente para llegar unas, 3 horas a 4 horas y de retorno 3
@@ -142,13 +113,11 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     ¿Cómo podría afectarme la altura?
                                 </button>
                             </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">La montaña de los siete colores esta 5.200 metros de altura
                                         si la altura te afecta sentirás los efectos. Los síntomas son dolor de cabeza,
@@ -159,13 +128,11 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                     ¿Qué tipo de ropa debo llevar?
                                 </button>
                             </h2>
-                            <div id="collapseSeven" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">La ropa con el que se sienta cómoda y se sienta capaz de dar
                                         mil vueltas al mundo un pantalón ancho o flexible una chaqueta abrigadora que no
@@ -176,13 +143,11 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                     ¿Qué debo llevar para el camino?
                                 </button>
                             </h2>
-                            <div id="collapseEight" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
+                            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-justify">Es necesario llevar alcohol medicinal, mate de coca, ti
                                         molina y bastante agua y un abrigo estas cosas llevas solo si por tu cuenta pero
@@ -195,7 +160,7 @@
             </div>
         </section>
     </main>
-    
+
 
 
 
