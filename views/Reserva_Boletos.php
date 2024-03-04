@@ -21,9 +21,9 @@
     <section class="container">
         <div class="row mt-3">
             <!-- 1ra Columna Datos Informativos -->
-            <div class="col-sm-12 cold-md-5 col-lg-5 my-3 border-3 rounded-2 mx-auto">
+            <div class="col-sm-12 cold-md-5 col-lg-5 mb-3 border-3 rounded-2 mx-auto">
                 <div class="card">
-                    <img src="../assets/images/montaña_7_Colores.webp" class="card-img-top" alt="Machupichu">
+                    <img src="../assets/images/montaña_7_Colores.webp" class="card-img-top" alt="Machupichu">
                     <div class="card-header">
                         <!-- Pestañas -->
                         <ul class="nav nav-tabs nav-justified mb-3" id="menu_Pestañas" role="tablist">
@@ -188,7 +188,7 @@
                             </div>
                             <div class="card-body">
                                 <ul class="card-text">
-                                    <li>Maximo 3 visitantes por reserva como Persona Natural y  visitantes como Personsa Juridica.</li>
+                                    <li>Maximo 5 visitantes por reserva como Persona Natural y 10 visitantes como Personsa Juridica.</li>
                                     <li>Son menores todos los visitantes entre los 3 y 17 años.</li>
                                     <li>Niños menores a 3 años no pagan, previa presentación de un documento, pasaporte o DNI que acredite la edad.
                                     </li>
@@ -257,7 +257,7 @@
                                         <div class="accordion-body">
                                             <div class="row">
                                                 <!-- 1er Horario -->
-                                                <div class="card-text-center col-sm col-md-4 col-lg-4 mb-3">
+                                                <div class="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
                                                     <div class="btn-group gap-2" role="group">
                                                         <div class="card-body">
                                                             <input type="radio" class="btn-check" name="boton_Horarios" id="horario01" autocomplete="off">
@@ -269,7 +269,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- 2er Horario -->
-                                                <div class="card-text-center col-sm col-md-4 col-lg-4 mb-3">
+                                                <div class="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
                                                     <div class="btn-group gap-3" role="group">
                                                         <div class="card-body">
                                                             <input type="radio" class="btn-check" name="boton_Horarios" id="horario02" autocomplete="off" disabled>
@@ -281,7 +281,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- 3er Horario -->
-                                                <div class="card-text-center col-sm col-md-4 col-lg-4 mb-3">
+                                                <div class="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
                                                     <div class="btn-group gap-3" role="group">
                                                         <div class="card-body">
                                                             <input type="radio" class="btn-check" name="boton_Horarios" id="horario03" autocomplete="off" disabled>
@@ -293,7 +293,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- 4to Horario -->
-                                                <div class="card-text-center col-sm col-md-4 col-lg-4 col-md-2 mb-3">
+                                                <div class="card-text-center col-sm-4 col-md-4 col-lg-4 col-md-2 mb-3">
                                                     <div class="btn-group gap-3" role="group">
                                                         <div class="card-body">
                                                             <input type="radio" class="btn-check" name="boton_Horarios" id="horario04" autocomplete="off" disabled>
@@ -305,7 +305,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- 5to Horario -->
-                                                <div class="card-text-center col-sm col-md-4 col-lg-4 mb-3">
+                                                <div class="card-text-center col-sm-2 col-md-2 col-lg-4 mb-3">
                                                     <div class="btn-group gap-3" role="group">
                                                         <div class="card-body">
                                                             <input type="radio" class="btn-check" name="boton_Horarios" id="horario05" autocomplete="off">
@@ -317,7 +317,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- 6to Horario -->
-                                                <div class="card-text-center col-sm col-md-4 col-lg-4 mb-3">
+                                                <div class="card-text-center col-sm-2 col-md-4 col-lg-4 mb-3">
                                                     <div class="btn-group gap-3" role="group">
                                                         <div class="card-body">
                                                             <input type="radio" class="btn-check" name="boton_Horarios" id="horario06" autocomplete="off">
@@ -341,13 +341,12 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12">
                         <div class="form-floating mb-3">
-                            <!-- CODIGO PARA AÑADIR ESTRUCTURA BOTON -->
-                            <!-- <div class="container">
+                            <div class="container">
                                 <div class="form-control btn-group" role="group">
                                     <div class="col-md">
                                         <label for="tipo_Adultos"> Adulto</label>
                                     </div>
-                                     <div class="">
+                                    <div class="">
                                         <button class="btn btn-outline-danger" type="button">
                                             <i class="bi bi-dash-circle text-dark"></i>
                                         </button>
@@ -360,12 +359,13 @@
                                             <i class="bi bi-plus-circle text-dark"></i>
                                         </button>
                                     </div>
+
                                 </div>
-                            </div> -->
-                            <div class="form-floating">
+                            </div>
+                            <!-- <div class="form-floating">
                                 <input class="form-control" type="number" id="tipo_Adultos" min="0" max="10">
                                 <label for="tipo_Adultos"> Adulto</label>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-lg-12">
@@ -406,6 +406,8 @@
 
     <!-- Pie de Pagina | Footer -->
     <?php echo file_get_contents('../includes/footer.html'); ?>
+
+
 
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
