@@ -14,17 +14,20 @@ switch ($page) {
         require_once './views/Reserva_Boletos.php';
         break; 
     case 'Pagina_Registro_Pasajeros':
-        require_once './views/Pagina_Registro_Pasajeros.php';
+        require_once './views/Pagina_Registro_Comprador.php';
         break;    
     case 'Pagina_Pago':
         require_once './views/Pagina_Pago.php';
         break;
     case 'Pagina_Compra_Realizada':
         require_once './views/Pagina_Compra_Realizada.php';
-        break; 
-           
+        break;
+    case 'example':
+        require_once './controllers/botones.php';
+        break;           
     // Agregar más casos para otras páginas
     default:
         require_once './Pagina_Principal.php';
         break;
 }
+// BIENVENIDO

@@ -33,7 +33,8 @@ p {
 }
 
 
-#header_Fondo {
+#header_Fondo {}
+#container_Logos_Gore{
     background-image: url(../assets/images/navbar_Fondo.png);
     background-size: cover;
 }
@@ -62,8 +63,7 @@ p {
 .navbar {
     background-color: rgb(158, 12, 38);
     height: 80px;
-    margin: 20px;
-    margin-bottom: 0;
+    margin: 10px;
     border-radius: 40px;
     padding: 0.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
@@ -110,7 +110,7 @@ p {
 .nav-links:hover,
 .nav-links {
     color: white;
-    font-family: "RedHatDisplay-Bold", sans-serif;
+    font-family: Arial black, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .nav-links::before {
@@ -174,7 +174,7 @@ p {
 /*Estilos del Pie de Pagina*/
 .footer {
     background-color: rgb(158, 12, 38);
-    background-image: url(../assets/images/footer_Fondo.webp);
+    background-image: url(../assets/images/fondo-footer.png);
     background-size: cover;
     background-position: top;
 }
