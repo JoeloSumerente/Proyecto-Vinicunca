@@ -40,7 +40,7 @@
                         <!-- Pestaña Tarifas -->
                         <div class="tab-content" id="contenido_Pestañas">
                             <div class="tab-pane fade show active" id="pestañas_Tarifas" role="tabpanel" aria-labelledby="tarifas_Tab" tabindex="0">
-                                <h6>Tarifario Unica General</h6>
+                                <strong>Tarifario Unica General</strong>
                                 <ul>
                                     <li> Tarifa General: s/ 30.00</li>
 
@@ -90,11 +90,15 @@
                             </div>
                             <!-- Pestaña Rutas -->
                             <div class="tab-pane fade mb-3" id="pestañas_Rutas" role="tabpanel" aria-labelledby="rutas_Tab" tabindex="0">
-                                <h6>
-                                    Ruta Vinicunca
-                                </h6>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit exercitationem et iste alias, molestias, unde qui consequatur commodi dolorem doloremque repellendus maxime quaerat recusandae quibusdam at quidem, nesciunt tempore nobis?</p>
-                                <!-- <div class="accordion" id="acordion_Ruta">
+                                <strong> 
+                                Ruta Vinicunca
+                                </strong>
+                                   
+                                <p>Vinicunca o Winikunka, llamada también montaña de siete colores, montaña arcoíris o montaña de colores, es una montaña del Perú, con una altitud de 5.200 m s. n.m.</p>
+                               <p>Está situada en el camino al nevado Ausangate, en los Andes del Perú, Región Cusco, entre los distritos de Cusipata, provincia de Quispicanchi, y Pitumarca, provincia de Canchis.</p>
+                               <p> El recorrido desde la ciudad del cusco es de 2 horas aproximadamente hasta la localidad de Checacupe, a partir de este poblado se recorre por una trocha carrozable, pasando por varias comunidades campesinas hasta arribar a la comunidad de Pampa Chiri, lugar donde termina la carretera e inicia la caminata de 5 km aproximadamente hasta el paso de Vinicunca, donde se puede apreciar la formación natural con forma de Arcoíris, considerado la Montaña de Colores</p>
+                            
+                               <!-- <div class="accordion" id="acordion_Ruta">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel_Rutas_A" aria-expanded="true" aria-controls="panel_Rutas_A">
@@ -167,16 +171,30 @@
                             
                             <!-- Pestaña Recomendaciones -->
                             <div class="tab-pane fade mb-3" id="pestañas_Recomendaciones" role="tabpanel" aria-labelledby="recomendaciones-Tab" tabindex="0">
-                                <h6>Durante su visita a los destinos turisticos, se encuentran prohibido los siguientes:</h6>
+                                <b>CONSEJOS Y RECOMENDACIONES</b>
                                 <ol>
-                                    <li>Prohibido el ingresar de alimentos y menaje.</li>
-                                    <li>Prohibido el ingresar con cualquier sustancia ilegal o bajo sus efectos.</li>
-                                    <li>Prohibido el ingresar con cualquier tipo de bebida alcoholica.</li>
-                                    <li>Prohibido realizar cualquier tipo de pinta o grafitti.</li>
-                                    <li>Prohibido el ingreso de cualquier tipo de coche de bebe.</li>
-                                    <li>Prohibido el ingresar con cualquier tipo de arma punzocortante.</li>
-                                    <li>Prohibido apoyarse en los muros y/o estructuras, mover, tocar o extraer elementos liticos.</li>
-                                    <li>Prohibido arrojar residuos de cualquier tipo.</li>
+                                    <li>Zapatillas de trekking</li>
+                                    <li>Ponchos impermeables</li>
+                                    <li>Bastones de trekking</li>
+                                    <li>Casaca y Pantalón Impermeable</li>
+                                    <li>Gorra y gafas de sol.</li>
+                                    <li>Papel higiénico y desinfectante de manos</li>
+                                    <li>Protector solar</li>
+                                    <li>Una mochila pequeña con un ajustador de cintura o cinturón de cadera </li>
+                                    <li>Agua, snacks, chocolate</li>
+                                    <li>Documentos de identidad</li>
+                                </ol>
+                                <b>RECUERDA</b>
+                                <ol>
+                                    <li>Es una caminata de 2 horas aproximadamente, es un trayecto empinado y dificultoso el cual posee una distancia de 5 kilómetros</li>
+                                    <li>La mejor época para realizar la caminata a la montaña de colores es en la época de secas entre los meses de marzo a noviembre.</li>
+                              <ul> 
+                                <b>
+                                 <em>Las visitas están permitidas hasta las 2:00pm, por lo tanto recomendamos realizar esta visita desde las 5:00 am hasta las 10:00 (inicio de la caminata, comunidad Campesina Pampa Chiri)</em>
+                                </b>
+                                </ul>
+                                   
+                               
                                 </ol>
                             </div>
                         </div>
