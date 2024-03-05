@@ -261,8 +261,7 @@
                     <div class="col-sm-12 col-md-12 cold-lg-12 border-3 rounded-2 mx-auto mb-3">
                         <div class="col-12 col-md-12 col-lg-12 mb-3">
                             <div class="form-floating">
-                                <input class="form-control" type="date" id="seleccion_Fecha_Reserva" min='<?php echo date('Y-m-d'); ?>'>
-                                <label for="seleccion_Fecha_Reserva">Fecha Reserva</label>
+                            <input class="form-control" type="date" id="fecha_Reserva" onchange="enviarFecha()" min='<?php echo date('Y-m-d'); ?>'>                                <label for="seleccion_Fecha_Reserva">Fecha Reserva</label>
                             </div>
                         </div>
                         <div class="card">
@@ -337,6 +336,8 @@
 
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../assets/crud_Datos.js"></script>
+    
 </body>
 
 </html>
