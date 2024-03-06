@@ -23,7 +23,7 @@
             <!-- 1ra Columna Datos Informativos -->
             <div class="col-sm-12 cold-md-5 col-lg-5 mt-5 mb-3 border-3 rounded-2 mx-auto">
                 <div class="card">
-                    <img src="../assets/images/montaña_7_Colores.webp" class="card-img-top" alt="Machupichu">
+                    <img src="../assets/images/montaña_7_Colores.webp" class="card-img-top" alt="Machupichu">
                     <div class="card-header">
                         <!-- Pestañas -->
                         <ul class="nav nav-tabs nav-justified mb-3" id="menu_Pestañas" role="tablist">
@@ -93,7 +93,7 @@
                                 <h6>
                                     Ruta Vinicunca
                                 </h6>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit exercitationem et iste alias, molestias, unde qui consequatur commodi dolorem doloremque repellendus maxime quaerat recusandae quibusdam at quidem, nesciunt tempore nobis?</p>
+                                <p style="text-align: justify;">Vinicunca o Winikunka, llamada también montaña de siete colores, montaña arcoíris o montaña de colores, es una montaña del Perú, con una altitud de 5.200 m s. n.m.<br> Está situada en el camino al nevado Ausangate, en los Andes del Perú, Región Cusco, entre los distritos de Cusipata, provincia de Quispicanchi, y Pitumarca, provincia de Canchis.<br> El recorrido desde la ciudad del cusco es de 2 horas aproximadamente hasta la localidad de Checacupe, a partir de este poblado se recorre por una trocha carrozable, pasando por varias comunidades campesinas hasta arribar a la comunidad de Pampa Chiri, lugar donde termina la carretera e inicia la caminata de 5 km aproximadamente hasta el paso de Vinicunca, donde se puede apreciar la formación natural con forma de Arcoíris, considerado la Montaña de Colores</p>
                                 <!-- <div class="accordion" id="acordion_Ruta">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -164,20 +164,34 @@
                                     </div>
                                 </div> -->
                             </div>
-                            
+
                             <!-- Pestaña Recomendaciones -->
                             <div class="tab-pane fade mb-3" id="pestañas_Recomendaciones" role="tabpanel" aria-labelledby="recomendaciones-Tab" tabindex="0">
                                 <h6>Durante su visita a los destinos turisticos, se encuentran prohibido los siguientes:</h6>
                                 <ol>
-                                    <li>Prohibido el ingresar de alimentos y menaje.</li>
-                                    <li>Prohibido el ingresar con cualquier sustancia ilegal o bajo sus efectos.</li>
-                                    <li>Prohibido el ingresar con cualquier tipo de bebida alcoholica.</li>
-                                    <li>Prohibido realizar cualquier tipo de pinta o grafitti.</li>
-                                    <li>Prohibido el ingreso de cualquier tipo de coche de bebe.</li>
-                                    <li>Prohibido el ingresar con cualquier tipo de arma punzocortante.</li>
-                                    <li>Prohibido apoyarse en los muros y/o estructuras, mover, tocar o extraer elementos liticos.</li>
-                                    <li>Prohibido arrojar residuos de cualquier tipo.</li>
+                                    <li>Zapatillas de trekking</li>
+                                    <li>Ponchos impermeables</li>
+                                    <li>Bastones de trekking</li>
+                                    <li>Casaca y Pantalón Impermeable</li>
+                                    <li>Gorra y gafas de sol.</li>
+                                    <li>Papel higiénico y desinfectante de manos</li>
+                                    <li>Protector solar</li>
+                                    <li>Una mochila pequeña con un ajustador de cintura o cinturón de cadera </li>
+                                    <li>Agua, snacks, chocolate</li>
+                                    <li>Documentos de identidad</li>
                                 </ol>
+                                <b> RECUERDA </b>
+                                <ol>
+                                    <li style="text-align: justify;">Es una caminata de 2 horas aproximadamente, es un trayecto empinado y dificultoso el cual posee una distancia de 5 kilómetros</li>
+                                    <li style="text-align: justify;">La mejor época para realizar la caminata a la montaña de colores es en la época de secas entre los meses de marzo a noviembre.</li>
+
+
+
+
+                                </ol>
+                                <b>
+                                    <p style="text-align: center;">Las visitas están permitidas hasta las 2:00pm, por lo tanto recomendamos realizar esta visita desde las 5:00 am hasta las 10:00 (inicio de la caminata, comunidad Campesina Pampa Chiri)</p>
+                                </b>
                             </div>
                         </div>
                     </div>
@@ -279,17 +293,31 @@
                     </div>
                 </div>
                 <!-- 2do Formulario Adulto - Adulto Mayor - Niños -->
+
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-12">
                         <div class="form-floating mb-3">
                             <div class="form-floating">
-                                <input class="form-control" type="number" id="cantidad_Boletos" min="0" max="10">
-                                <label for="cantidad_Boletos"> Cantidad de Boletos</label>
+                                <input class="form-control" type="number" id="inputNumero" min="0" max="10">
+                                <label for="inputNumero"> Cantidad de Boletos</label>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="d-flex mb-3">
+                    <div class="p-2">
+                        <label style="font-family: RedHatDisplay-Bold; font-size: 20px" for="labelResultado"> Total:</label>
+                        <label style="font-family: RedHatDisplay-Bold; font-size: 20px" class="badge rounded-pill bg-danger" id="labelResultado">0</label>
+                    </div>
+                    <div class="ms-auto p-2">
+                        <label style="font-family: RedHatDisplay-Bold; font-size: 20px" for="labelCosto"> S/. </label>
+                        <label style="font-family: RedHatDisplay-Bold; font-size: 20px" class="badge rounded-pill bg-danger" id="labelCosto">0</label>
+                    </div>
+                </div>
+
+
                 <!-- 3ro Info Total - Precio -->
+                <!--
                 <div class="row">
                     <div class="d-flex mb-3">
                         <div class="p-2">
@@ -298,12 +326,43 @@
                             </h4>
                         </div>
                         <div class="ms-auto p-2">
-                            <h4>
-                                s/ 220.00
-                            </h4>
+                            <label for="labelCosto"> S/. 120 </label>
+                            <label class="badge rounded-pill bg-danger" id="labelCosto">0</label>
                         </div>
                     </div>
-                </div>
+                </div>-->
+
+                <script>
+                    //elementos HTML
+                    const cantidad_Boleto = document.getElementById('cantidad_Boleto');
+                    const labelResultado = document.getElementById('labelResultado');
+                    const labelCosto = document.getElementById('labelCosto');
+                    // Función multiplicación
+                    function actualizarResultado() {
+                        //valor del número ingresado 
+                        const numero = inputNumero.value;
+
+                        // Cantidad fija para la multiplicación
+                        const cantidad = 1;
+                        const costo = 30;
+
+                        // Calcular el resultado de la multiplicación
+                        const resultado = numero * cantidad;
+                        const entrada_costo = numero * costo;
+
+                        // Actualizar el contenido 
+                        labelResultado.textContent = resultado;
+                        labelCosto.textContent = entrada_costo;
+                    }
+
+                    // Escuchar el evento 'input' en el campo de entrada
+                    inputNumero.addEventListener('input', actualizarResultado);
+
+                    // Llamar a la función 
+                    actualizarResultado();
+                </script>
+
+
                 <!-- Boton Buscar Horario -->
                 <div class="d-grid gap-2 col-12 col-md-12 col-lg-12 mx-auto mt-3">
                     <a href="./Pagina_Registro_Comprador.php" class="btn btn-danger btn-lg mb-3">Comprar Boletos</a>
@@ -315,6 +374,10 @@
     <!-- Pie de Pagina | Footer -->
     <?php echo file_get_contents('../includes/footer.html'); ?>
 
+    <script type="">
+
+    </script>
+
 
 
     <!-- SCRIPT BOOTSTRAP -->
@@ -322,3 +385,5 @@
 </body>
 
 </html>
+
+<script src="../includes/js/main.js"></script>

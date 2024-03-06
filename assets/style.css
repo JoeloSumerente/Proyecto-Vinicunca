@@ -24,7 +24,18 @@
     src: url(../assets/fuentes/RedHatDisplay-Regular.ttf);
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'arima-koshi-bold', sans-serif;
 }
 
@@ -33,11 +44,12 @@ p {
 }
 
 
-#header_Fondo {}
-#container_Logos_Gore{
+#header_Fondo {
     background-image: url(../assets/images/navbar_Fondo.png);
     background-size: cover;
 }
+
+
 
 #idioma {
     padding: 15px;
@@ -63,7 +75,8 @@ p {
 .navbar {
     background-color: rgb(158, 12, 38);
     height: 80px;
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 0;
     border-radius: 40px;
     padding: 0.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
@@ -174,7 +187,7 @@ p {
 /*Estilos del Pie de Pagina*/
 .footer {
     background-color: rgb(158, 12, 38);
-    background-image: url(../assets/images/fondo-footer.png);
+    background-image: url(../assets/images/footer_Fondo.webp);
     background-size: cover;
     background-position: top;
 }
@@ -237,9 +250,71 @@ p {
 }
 
 /*Estilos de ACORDION-PREGUNTAS FRECUENTES*/
-.accordion{
+.accordion {
     --bs-accordion-active-bg: rgb(158, 12, 38);
     --bs-accordion-active-color: white;
     --bs-accordion-icon-active-color: white;
     --bs-accordion-icon-color: white;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-item label {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accordion-item-content {
+    padding: 10px 20px;
+    display: none;
+}
+
+.accordion-item-content.show {
+    display: block;
+}
+
+#pagar_visa {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pagar_Yape {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd000;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/*Galeria*/
+#gaelria {
+    padding: 20px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 220px;
+}
+
+#galeria .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#galeria img:hover {
+    border: 5px solid #f7f7f7;
 }
