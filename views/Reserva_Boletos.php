@@ -365,11 +365,38 @@
 
                 <!-- Boton Buscar Horario -->
                 <div class="d-grid gap-2 col-12 col-md-12 col-lg-12 mx-auto mt-3">
-                    <a href="./Pagina_Registro_Comprador.php" class="btn btn-danger btn-lg mb-3">Comprar Boletos</a>
+                    <a class="btn btn-danger btn-lg mb-3" id="comprarBoleto">Comprar Boletos</a>
                 </div>
+                <!-- <a  id="enviarMensaje" >a</a> -->
+                <!--<button id="comprarBoleto">Comprar Boleto</button>-->
+
+                <!--validar buton-->
+                <script>
+                    // Obtener referencia al botón de enviar mensaje
+                    const botonEnviar = document.getElementById('comprarBoleto');
+
+                    // Función para verificar campos llenados y redirigir
+                    function verificarCamposYRedirigir() {
+                        // Obtener valores de los campos
+                        const cantBoletos = document.getElementById('inputNumero').value;
+
+                        // Verificar si los campos están llenados
+                        if (cantBoletos.trim() === '') {
+                            alert('Por favor, llene todos los campos antes de comprar boleto.');
+                        } else {
+                            // Redirigir a otra página
+                            window.location.href = "../views/Pagina_Registro_Comprador.php"
+                            // Window.location.href="../ass";
+                        }
+                    }
+                    // Agregar evento click al botón 
+                    botonEnviar.addEventListener('click', verificarCamposYRedirigir);
+                </script>
             </form>
         </div>
     </section>
+
+    <script src="../assets/js/funciones.js"></script>
 
     <!-- Pie de Pagina | Footer -->
     <?php echo file_get_contents('../includes/footer.html'); ?>
